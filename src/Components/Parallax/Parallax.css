@@ -1,0 +1,298 @@
+
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2,0.49,0.32,0.99);
+}
+
+.bg-img{
+    position: absolute;
+    width: 180%;
+    top: 1.86%;
+    left: 70%;
+    z-index: 1;
+}
+
+.fog-1{
+    position: absolute;
+    z-index: 21;
+    width: 1.3%;
+    top: 78%;
+    left: 70%;
+}
+.mountain-10 {
+    position: absolute;
+    z-index: 3;
+    width: 60%;
+    top: 58%;
+    left: 65%;
+}
+.fog-2{
+    position: absolute;
+    z-index: 4;
+    width: 127%;
+    top: 61.6%;
+    left: 50.5%;
+}
+.mountain-9 {
+    position: absolute;
+    z-index: 1;
+    width: 32%;
+    top: 64%;
+    left: 25%;
+}
+.mountain-8 {
+    position: absolute;
+    z-index: 6;
+    width: 54%;
+    top: 62%;
+    left: 36%;
+}
+.fog-3 {
+    position: absolute;
+    z-index: 7;
+    width: 31%;
+    top: 71%;
+    left: 52%;
+}
+.mountain-7 {
+    position: absolute;
+    z-index: 8;
+    width: 36%;
+    top: 66%;
+    left: 71%;
+}
+.mountain-6 {
+    position: absolute;
+    z-index: 10;
+    width: 27%;
+    top: 60%;
+    left: 90%;
+}
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    width: 38%;
+    top: 80%;
+    left: 54.5%;
+}
+.mountain-5 {
+    position: absolute;
+    z-index: 16;
+    width: 40%;
+    top: 87%;
+    left: 59%;
+}
+.fog-5{
+    position: absolute;
+    z-index: 13;
+    width: 78%;
+    top: 68%;
+    left: 48%;
+}
+.mountain-4 {
+    position: absolute;
+    z-index: 15;
+    width: 50%;
+    top: 83%;
+    left: 24%;
+}
+.mountain-3 {
+    position: absolute;
+    z-index: 15;
+    width: 29%;
+    top: 63%;
+    left: 97%;
+}
+.fog-6{
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    top: 74%;
+    left: 48%;
+}
+.mountain-2 {
+    position: absolute;
+    z-index: 17;
+    width: 44%;
+    top: 78%;
+    left: 78%;
+}
+.mountain-1 {
+    z-index: 24;
+    width: 33%;
+    top: 65%;
+    left: 10%;
+    position: absolute;
+}
+
+
+.text{
+    position: absolute;
+    z-index: 9;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: white;
+}
+
+.text h2{
+    font-weight: 100;
+    font-size: 5.5rem;
+}
+
+.text h1{
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 0.88;
+
+}
+
+.sun-rays{
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 41%;
+    pointer-events: none;
+
+}
+.black-shadow{
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.vignette{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0)65%, rgba
+    (0,0,0,0.7));
+    pointer-events: none;
+
+}
+
+/* ------------------------ Responsive ------------------------ */
+
+ @media  (max-width: 1100px){
+    .text h1{
+        font-size: 3.8rem;
+    }
+    .text h2{
+        font-size: 2.8rem;
+    }
+
+ }
+
+ @media  (max-width: 725px){
+    .text h1{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+    .text h2{
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    .bg-img{
+        width: initial;
+        height: 288% ; /* previus width * 1.6 */
+    }
+
+    .fog-1{
+        width: initial;
+        height: 2%;
+
+    }
+    .mountain-10 {
+        width: initial;
+        height: 96%;
+    }
+    .fog-2{
+        width: initial;
+        height: 203%;
+    }
+    .mountain-9 {
+        width: initial;
+        height: 51.2%;
+    }
+    .mountain-8 {
+        width: initial;
+        height: 86.5%;
+    }
+    .fog-3 {
+        width: initial;
+        height: 50%;
+    }
+    .mountain-7 {
+        width: initial;
+        height: 57.6%;
+    }
+    .mountain-6 {
+        width: initial;
+        height: 43.6%;
+    }
+    .fog-4 {
+        width: initial;
+        height: 61%;
+    }
+    .mountain-5 {
+        width: initial;
+        height: 64% ;
+    }
+    .fog-5{
+        width: initial;
+        height: 125%;
+    }
+    .mountain-4 {
+        width: initial;
+        height: 80% ;
+    }
+    .mountain-3 {
+        width: initial;
+        height: 46.5%;
+    }
+    .fog-6{
+        width: initial;
+        height: 160%;
+    }
+    .mountain-2 {
+        width: initial;
+        height: 70.5% ;
+    }
+    .mountain-1 {
+        width: initial;
+        height: 70%;
+    }
+
+ }
+
+ @media  (max-width: 520px){
+    .text h1{
+        font-size: 2.5rem;
+    }
+    .text h2{
+        font-size: 1.7rem;
+    }
+    
+ }
+    
+ 
+
+
